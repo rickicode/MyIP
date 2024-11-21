@@ -18,6 +18,7 @@
   <Shell v-if="curlDomainsHadSet" ref="shellRef" />
   <QueryIP ref="queryIPRef" />
   <HelpModal ref="helpModalRef" />
+  <SpeedInsights />
   <Footer ref="footerRef" />
   <PWA />
   <Patch />
@@ -50,6 +51,7 @@ import { ref, computed, onMounted, watch } from 'vue';
 import { useMainStore } from '@/store';
 import { useI18n } from 'vue-i18n';
 import { trackEvent } from '@/utils/use-analytics';
+import { SpeedInsights } from '@vercel/speed-insights/vue';
 
 
 // Utils
