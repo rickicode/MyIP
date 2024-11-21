@@ -8,12 +8,12 @@
         <a class="navbar-brand d-flex align-items-center align-content-center" :class="{ 'text-white': isDarkMode }"
           href="#" @click="handleLogoClick">
           <brandIcon />
-          <span class=" fw-bold  "> IP</span>
-          <span class="fw-lighter">Check.</span>
+          <span class=" fw-bold  "> My</span>
+          <span class="fw-lighter">IP.</span>
           <span class="fw-lighter" :class="{
           'background-animation-dark': !loaded && isDarkMode,
           'background-animation-light': !loaded && !isDarkMode
-        }">ing</span>
+        }">NETQ.ME</span>
         </a>
 
         <div class="btn-group mx-1" :data-bs-theme="isDarkMode ? 'dark' : 'light'">
