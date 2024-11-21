@@ -1,6 +1,5 @@
 <template>
   <NavBar ref="navBarRef" />
-  <SpeedInsights />
   <Preferences ref="preferencesRef" />
   <Alert />
   <div id="mainpart" class="container mt-5 jn-container">
@@ -19,6 +18,7 @@
   <Shell v-if="curlDomainsHadSet" ref="shellRef" />
   <QueryIP ref="queryIPRef" />
   <HelpModal ref="helpModalRef" />
+  <SpeedInsights />
   <Footer ref="footerRef" />
   <PWA />
   <Patch />
