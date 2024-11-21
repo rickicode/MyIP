@@ -1,5 +1,6 @@
 <template>
   <NavBar ref="navBarRef" />
+  <SpeedInsights />
   <Preferences ref="preferencesRef" />
   <Alert />
   <div id="mainpart" class="container mt-5 jn-container">
@@ -50,6 +51,8 @@ import { ref, computed, onMounted, watch } from 'vue';
 import { useMainStore } from '@/store';
 import { useI18n } from 'vue-i18n';
 import { trackEvent } from '@/utils/use-analytics';
+import { SpeedInsights } from '@vercel/speed-insights/vue';
+
 
 // Utils
 import { mappingKeys, keyMap, navigateCards } from "@/utils/shortcut.js";
