@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![IPCheck.ing Banner](https://raw.githubusercontent.com/jason5ng32/MyIP/main/public/github/gh_banner.png)
+![MyIP.NETQ.ME Banner](https://raw.githubusercontent.com/jason5ng32/MyIP/main/public/github/gh_banner.png)
 
 <a href="https://trendshift.io/repositories/5332" target="_blank"><img src="https://trendshift.io/api/badge/repositories/5332" alt="jason5ng32%2FMyIP | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
 
@@ -12,7 +12,7 @@
 ![GitHub forks](https://img.shields.io/github/forks/jason5ng32/myip)
 ![Docker Pulls](https://img.shields.io/docker/pulls/jason5ng32/myip)
 
-[![Website](https://img.shields.io/website?url=https%3A%2F%2Fipcheck.ing&up_message=online&label=IPCheck.ing 'IPCheck.ing')](https://ipcheck.ing)
+[![Website](https://img.shields.io/website?url=https%3A%2F%2FMyIP.NETQ.ME&up_message=online&label=MyIP.NETQ.ME 'MyIP.NETQ.ME')](https://MyIP.NETQ.ME)
 ![PWA](https://img.shields.io/badge/PWA-Supported-blue)
 
 ![CodeQL](https://github.com/jason5ng32/MyIP/actions/workflows/github-code-scanning/codeql/badge.svg?branch=main)
@@ -20,7 +20,7 @@
 
 🇺🇸 [English](README.md) | 🇨🇳 [简体中文](README_ZH.md) | 🇫🇷 [Français](README_FR.md)
 
-👉 Demo: [https://ipcheck.ing](https://ipcheck.ing)
+👉 Demo: [https://MyIP.NETQ.ME](https://MyIP.NETQ.ME)
 
 Feel free to bookmark the demo or deploy your own.
 
@@ -98,7 +98,7 @@ You can use the program without adding any environment variables, but if you wan
 | `SECURITY_BLACKLIST_LOG_FILE_PATH` | No | `"logs/blacklist-ip.log"` | Path setting. Records the list of IPs that triggered the limit after SECURITY_RATE_LIMIT is enabled |
 | `BING_MAP_API_KEY` | No | `""` | API Key for Bing Maps, used to display the location of the IP on a map |
 | `ALLOWED_DOMAINS` | No | `""` | Allowed domains for access, separated by commas, used to prevent misuse of the backend API |
-| `IPCHECKING_API_KEY` | No | `""` | API Key for IPCheck.ing, used to obtain accurate IP geolocation information |
+| `IPCHECKING_API_KEY` | No | `""` | API Key for MyIP.NETQ.ME, used to obtain accurate IP geolocation information |
 | `IPINFO_API_TOKEN` | No | `""` | API Token for IPInfo.io, used to obtain IP geolocation information through IPInfo.io |
 | `IPAPIIS_API_KEY` | No | `""` | API Key for IPAPI.is, used to obtain IP geolocation information through IPAPI.is |
 | `KEYCDN_USER_AGENT` | No | `""` | The domain name when using KeyCDN, must contain https prefix. Used to obtain IP address information through KeyCDN |
@@ -153,17 +153,17 @@ If you're using a proxy for internet access, consider adding this rule to your p
 # IP Testing
 IP-CIDR,1.0.0.1/32,Proxy,no-resolve
 IP-CIDR6,2606:4700:4700::1111/128,Proxy,no-resolve
-DOMAIN,4.ipcheck.ing,DIRECT
-DOMAIN,6.ipcheck.ing,DIRECT
+DOMAIN,4.MyIP.NETQ.ME,DIRECT
+DOMAIN,6.MyIP.NETQ.ME,DIRECT
 # Rule Testing
-DOMAIN,ptest-1.ipcheck.ing,Proxy1
-DOMAIN,ptest-2.ipcheck.ing,Proxy2
-DOMAIN,ptest-3.ipcheck.ing,Proxy3
-DOMAIN,ptest-4.ipcheck.ing,Proxy4
-DOMAIN,ptest-5.ipcheck.ing,Proxy5
-DOMAIN,ptest-6.ipcheck.ing,Proxy6
-DOMAIN,ptest-7.ipcheck.ing,Proxy7
-DOMAIN,ptest-8.ipcheck.ing,Proxy8
+DOMAIN,ptest-1.MyIP.NETQ.ME,Proxy1
+DOMAIN,ptest-2.MyIP.NETQ.ME,Proxy2
+DOMAIN,ptest-3.MyIP.NETQ.ME,Proxy3
+DOMAIN,ptest-4.MyIP.NETQ.ME,Proxy4
+DOMAIN,ptest-5.MyIP.NETQ.ME,Proxy5
+DOMAIN,ptest-6.MyIP.NETQ.ME,Proxy6
+DOMAIN,ptest-7.MyIP.NETQ.ME,Proxy7
+DOMAIN,ptest-8.MyIP.NETQ.ME,Proxy8
 ```
 
 ## 😶‍🌫️ Additional Notes

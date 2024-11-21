@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![IPCheck.ing Banner](https://raw.githubusercontent.com/jason5ng32/MyIP/main/public/github/gh_banner.png)
+![MyIP.NETQ.ME Banner](https://raw.githubusercontent.com/jason5ng32/MyIP/main/public/github/gh_banner.png)
 
 <a href="https://trendshift.io/repositories/5332" target="_blank"><img src="https://trendshift.io/api/badge/repositories/5332" alt="jason5ng32%2FMyIP | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
 
@@ -12,7 +12,7 @@
 ![GitHub forks](https://img.shields.io/github/forks/jason5ng32/myip)
 ![Docker Pulls](https://img.shields.io/docker/pulls/jason5ng32/myip)
 
-[![Website](https://img.shields.io/website?url=https%3A%2F%2Fipcheck.ing&up_message=online&label=IPCheck.ing 'IPCheck.ing')](https://ipcheck.ing)
+[![Website](https://img.shields.io/website?url=https%3A%2F%2FMyIP.NETQ.ME&up_message=online&label=MyIP.NETQ.ME 'MyIP.NETQ.ME')](https://MyIP.NETQ.ME)
 ![PWA](https://img.shields.io/badge/PWA-Supported-blue)
 
 ![CodeQL](https://github.com/jason5ng32/MyIP/actions/workflows/github-code-scanning/codeql/badge.svg?branch=main)
@@ -20,7 +20,7 @@
 
 🇺🇸 [English](README.md) | 🇨🇳 [简体中文](README_ZH.md) | 🇫🇷 [Français](README_FR.md)
 
-👉 在这里体验：[https://ipcheck.ing](https://ipcheck.ing)
+👉 在这里体验：[https://MyIP.NETQ.ME](https://MyIP.NETQ.ME)
 
 你可以直接用我已经搭建好的服务，也可以自行搭建。
 
@@ -98,7 +98,7 @@ docker run -d -p 18966:18966 --name myip --restart always jason5ng32/myip:latest
 | `SECURITY_BLACKLIST_LOG_FILE_PATH` | 否 | `"logs/blacklist-ip.log"` | 路径设置。记录由 SECURITY_RATE_LIMIT 开启后，触发限制的 IP 列表 |
 | `BING_MAP_API_KEY` | 否 | `""` | Bing 地图的 API Key，用于展示 IP 所在地的地图 |
 | `ALLOWED_DOMAINS` | 否 | `""` | 允许访问的域名，用逗号分隔，用于防止后端 API 被滥用 |
-| `IPCHECKING_API_KEY` | 否 | `""` | IPCheck.ing 的 API Key，用于获取精准的 IP 归属地信息 |
+| `IPCHECKING_API_KEY` | 否 | `""` | MyIP.NETQ.ME 的 API Key，用于获取精准的 IP 归属地信息 |
 | `IPINFO_API_TOKEN` | 否 | `""` | IPInfo.io 的 API Token，用于通过 IPInfo.io 获取 IP 归属地信息 |
 | `IPAPIIS_API_KEY` | 否 | `""` | IPAPI.is 的 API Key，用于通过 IPAPI.is 获取 IP 归属地信息 |
 | `KEYCDN_USER_AGENT` | 否 | `""` | 使用 KeyCDN 时的域名，需包含 https 前缀。用于通过 KeyCDN 获取 IP 归属地信息 |
@@ -153,17 +153,17 @@ docker run -d -p 18966:18966 \
 # IP Testing
 IP-CIDR,1.0.0.1/32,Proxy,no-resolve
 IP-CIDR6,2606:4700:4700::1111/128,Proxy,no-resolve
-DOMAIN,4.ipcheck.ing,DIRECT
-DOMAIN,6.ipcheck.ing,DIRECT
+DOMAIN,4.MyIP.NETQ.ME,DIRECT
+DOMAIN,6.MyIP.NETQ.ME,DIRECT
 # Rule Testing
-DOMAIN,ptest-1.ipcheck.ing,Proxy1
-DOMAIN,ptest-2.ipcheck.ing,Proxy2
-DOMAIN,ptest-3.ipcheck.ing,Proxy3
-DOMAIN,ptest-4.ipcheck.ing,Proxy4
-DOMAIN,ptest-5.ipcheck.ing,Proxy5
-DOMAIN,ptest-6.ipcheck.ing,Proxy6
-DOMAIN,ptest-7.ipcheck.ing,Proxy7
-DOMAIN,ptest-8.ipcheck.ing,Proxy8
+DOMAIN,ptest-1.MyIP.NETQ.ME,Proxy1
+DOMAIN,ptest-2.MyIP.NETQ.ME,Proxy2
+DOMAIN,ptest-3.MyIP.NETQ.ME,Proxy3
+DOMAIN,ptest-4.MyIP.NETQ.ME,Proxy4
+DOMAIN,ptest-5.MyIP.NETQ.ME,Proxy5
+DOMAIN,ptest-6.MyIP.NETQ.ME,Proxy6
+DOMAIN,ptest-7.MyIP.NETQ.ME,Proxy7
+DOMAIN,ptest-8.MyIP.NETQ.ME,Proxy8
 ```
 
 ## 😶‍🌫️ 额外说明

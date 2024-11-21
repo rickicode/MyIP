@@ -1,26 +1,26 @@
 import { isValidIP } from '@/utils/valid-ip.js';
 import { getIPFromIpify_V6 } from "./ipify-v6";
 
-// 从 IPCheck.ing 获取 IPv6 地址
+// 从 MyIP.NETQ.ME 获取 IPv6 地址
 const getIPFromIPChecking6 = async (originalSite) => {
     try {
         let ip;
         originalSite ? ip = await getFromJson() : ip = await getFromTrace();
-        const source = "IPCheck.ing IPv6";
+        const source = "MyIP.NETQ.ME IPv6";
         if (isValidIP(ip)) {
             return {
                 ip: ip,
                 source: source
             };
         } else {
-            console.error("Invalid IP from IPCheck.ing IPv6:", ip);
+            console.error("Invalid IP from MyIP.NETQ.ME IPv6:", ip);
             return {
                 ip: null,
                 source: source
             };
         }
     } catch (error) {
-        console.error("Error fetching IP from IPCheck.ing IPv6:", error);
+        console.error("Error fetching IP from MyIP.NETQ.ME IPv6:", error);
     }
     // 故障转移
     const { ip, source } = await getIPFromIpify_V6();
@@ -32,7 +32,7 @@ const getIPFromIPChecking6 = async (originalSite) => {
 
 const getFromJson = async () => {
     try {
-        const response = await fetch("https://6.ipcheck.ing");
+        const response = await fetch("https://6.MyIP.NETQ.ME");
         if (!response.ok) {
             throw new Error("Network response was not ok");
         }
@@ -41,14 +41,14 @@ const getFromJson = async () => {
         const ip = data.ip;
         return ip;
     } catch (error) {
-        console.error("Error fetching IP from IPCheck.ing IPv6 JSON:", error);
+        console.error("Error fetching IP from MyIP.NETQ.ME IPv6 JSON:", error);
     }
     return getFromTrace();
 };
 
 const getFromTrace = async () => {
     try {
-        const response = await fetch("https://6.ipcheck.ing/cdn-cgi/trace");
+        const response = await fetch("https://6.MyIP.NETQ.ME/cdn-cgi/trace");
         const data = await response.text();
         const lines = data.split("\n");
         const ipLine = lines.find((line) => line.startsWith("ip="));
@@ -58,7 +58,7 @@ const getFromTrace = async () => {
         }
         return ip;
     } catch (error) {
-        console.error("Error fetching IP from IPCheck.ing IPv6 Trace:", error);
+        console.error("Error fetching IP from MyIP.NETQ.ME IPv6 Trace:", error);
         throw error;
     }
 };

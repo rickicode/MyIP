@@ -30,8 +30,8 @@ export default (req, res) => {
 
     const lang = req.query.lang || 'en';
 
-    // 构建请求 IPCheck.ing 的 URL
-    const url = new URL(`https://api.ipcheck.ing/ipinfo?key=${key}&ip=${ipAddress}&lang=${lang}`);
+    // 构建请求 MyIP.NETQ.ME 的 URL
+    const url = new URL(`https://api.MyIP.NETQ.ME/ipinfo?key=${key}&ip=${ipAddress}&lang=${lang}`);
 
     get(url, apiRes => {
         let data = '';

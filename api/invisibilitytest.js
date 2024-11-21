@@ -38,7 +38,7 @@ export default (req, res) => {
         return res.status(500).json({ error: 'API key is missing' });
     }
 
-    const url = new URL(`https://api.ipcheck.ing/getpdresult/${id}?apikey=${apikey}`);
+    const url = new URL(`https://api.MyIP.NETQ.ME/getpdresult/${id}?apikey=${apikey}`);
 
     get(url, apiRes => {
         let data = '';

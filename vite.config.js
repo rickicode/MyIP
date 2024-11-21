@@ -74,8 +74,8 @@ export default defineConfig({
         ]
       },
       manifest: {
-        name: 'IPCheck.ing',
-        short_name: 'IPCheck.ing',
+        name: 'MyIP.NETQ.ME',
+        short_name: 'MyIP.NETQ.ME',
         theme_color: '#f8f9fa',
         orientation: "portrait",
         id: 'com.jasonng.myip',

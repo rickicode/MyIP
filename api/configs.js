@@ -14,7 +14,7 @@ export default (req, res) => {
     }
 
     const hostname = referer ? new URL(referer).hostname : '';
-    const originalSite = hostname === 'ipcheck.ing' || hostname === 'www.ipcheck.ing' || hostname === 'localtest.ipcheck.ing';
+    const originalSite = hostname === 'MyIP.NETQ.ME' || hostname === 'www.MyIP.NETQ.ME' || hostname === 'localtest.MyIP.NETQ.ME';
 
     const envConfigs = {
         bingMap: process.env.BING_MAP_API_KEY,

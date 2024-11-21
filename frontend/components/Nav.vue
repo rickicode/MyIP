@@ -117,7 +117,7 @@ const OpenPreferences = () => {
 
 //获取 GitHub stars
 const getGitHubStars = async () => {
-  const url = `https://api.github.com/repos/jason5ng32/MyIP`;
+  const url = `https://api.github.com/repos/rickicode/NETQ-APK`;
 
   try {
     const response = await fetch(url);

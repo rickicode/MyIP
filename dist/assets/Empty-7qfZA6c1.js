@@ -1,0 +1,1 @@
+import{_ as o}from"./index-2BEB5hYu.js";import{b as t,o as e}from"./vendor-CF_RhtoL.js";const n={name:"EmptyComponent"};function r(c,p,s,a,m,_){return e(),t("div")}const d=o(n,[["render",r]]);export{d as default};
