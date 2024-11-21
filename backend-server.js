@@ -40,7 +40,7 @@ function getClientIp(req) {
 
 // 记录限流触发的 IP 地址
 function formatDate(timestamp) {
-    return new Date(timestamp).toLocaleString('en-US', { timeZone: 'Asia/Shanghai' });
+    return new Date(timestamp).toLocaleString('en-US', { timeZone: 'Asia/Jakarta' });
 }
 
 function logLimitedIP(ip) {
